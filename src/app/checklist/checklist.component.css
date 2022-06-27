@@ -1,0 +1,100 @@
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width:40%;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  color: blue;
+}
+ th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(247, 244, 244, 0.777);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.leftline {
+  width: 3%;
+}
+
+.nomination-title {
+   width: 250px;
+   height: 35px; 
+   /* position: absolute; */
+          /* display: inline-block; */
+          /* left: 1%;
+          right: 1%;
+          top: 50%; */
+}
+
+.rightline {
+  width: 89%;
+}
+
+#container
+{
+  /* border: 1px solid; */
+  margin: auto;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+  width: 95%;
+}
+
+#line
+{
+  border : 1px solid black;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+
+}
