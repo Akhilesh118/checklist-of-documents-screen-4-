@@ -1,34 +1,10 @@
-  <br><br><br>
-    <!-- <body style="color:skyblue;">
+  <!-- <br><br><br>
+    <body style="color:skyblue;">
         <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHECHLIST OF DOCUMENTS </h1>
         <hr size="1" width="90%" color="blue"> 
       
        
         </body> -->
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
-        <div style="color:skyblue;">
-          <h1 align="center"> CHECKLIST OF DOCUMENTS </h1>
-      </div>
-        <div id="container">
-            <div class="d-flex">
-                <div class="leftline border-bottom border-primary pt-3 "></div>
-                <div class="nomination-title border-top border-start border-end 
-                border-primary px-10 py-2 text-center text-primary text-uppercase">
-                CHECKLIST OF DOCUMENTS</div>
-                <div class="rightline border-bottom border-primary pt-3"></div>
-            </div>
-            <br>
-        <div>
-        
-        
-        <!-- </div>
-<meta name="viewport" content="width=device-width, initial-scale=2">
-<div class="topnav">
-  <h3>List Of Documents</h3>
-</div> -->
 <div>
   <h3 class="p-1" style="background-color: lightgrey">LIST OF DOCUMENTS</h3>
 </div>
@@ -55,14 +31,12 @@
 <div style="color:skyblue;">
 
     &nbsp;&nbsp;  &nbsp;&nbsp;  <input hidden type="file" name="file" id="file"  />
-    <!-- <label for="file"><a>Upload file</a></label> -->
-    <input class="form-control" type="file" 
+    <label for="file"><a>Upload file</a></label>
+    <!-- <input class="form-control" type="file" 
             (change)="onChange($event)">
   
-    <button (click)="onUpload()" 
-        class="btn btn-success">
-        Upload
-    </button>
+    <a (click)="onUpload()" 
+>        Upload</a> -->
     
 </div>
 <br><br>
@@ -75,13 +49,23 @@
       <th>PREVIEW</th>
       <th>ACTIONS</th>
     </tr>
-    <tr>
-      <td> <input hidden type="file" name="file" id="file"  />
+    <tr class="blank_row">
+      <td colspan="10"> <input hidden type="file" name="file" id="file"  />
         <label for="file"><a><u>Select files</u></a></label></td>
+      <!-- <td></td>
       <td></td>
       <td></td>
       <td></td>
-      <td></td>
-      <td></td>
+      <td></td> -->
     </tr>
   </table>
+  <br><br>
+<br>
+  <div class="col-sm-3" >
+    <button type="button" class="btn btn-outline-primary">EXIT</button>
+</div>
+<div class="col-sm">
+    <button type="button" class="btn btn-primary">SAVE</button>&nbsp;&nbsp;
+    <button type="button" class="btn btn-primary">SAVE AND CONTINUE</button>
+</div>
+
