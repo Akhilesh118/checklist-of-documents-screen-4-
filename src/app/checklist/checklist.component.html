@@ -43,7 +43,7 @@
 <table>
     <tr>
       <th>DOCUMENT<br><br>NAME</th>
-      <th>UPLOADED<br><br>BY</th>
+      <!-- <th>UPLOADED<br><br>BY</th> -->
       <th>DATE<br><br>TIME</th>
       <th>SIZE</th>
       <th>PREVIEW</th>
@@ -52,7 +52,9 @@
     <tr class="blank_row">
       <td colspan="10"> <input hidden type="file" name="file" id="file"  />
         <!-- <label for="file"><a><u>Select files</u></a></label></td> -->
-        <select name="Documents-type" id="Documents-type">
+        
+        <select name="document_type" id="document_type" #teams (change)="onselect(teams.value)">
+          <option value="--Select--">--Select--</option>
           <option value="offer letter of previous employer">Offer letter of previous employer</option>
           <option value="relieving letter of previous employer">Relieving letter of previous employer</option>
           <option value="service certificates of previous employer">Service certificates of previous employer</option>
@@ -63,8 +65,8 @@
           <option value="last 2nd month pay slip">Last 2nd month pay slip</option>
           <option value="last 1st month pay slip">Last 1st v month pay slip</option>
           <option value="form 16">Form 16 from your current or previous employer</option>
-         <option value="Relieving Letter not employed">Relieving Letter from your last employer if you are not employed right now</option>
-         <option value="Offer Letter">Offer Letter specifying the date of joining at your current organization</option>
+          <option value="Relieving Letter not employed">Relieving Letter from your last employer if you are not employed right now</option>
+          <option value="Offer Letter">Offer Letter specifying the date of joining at your current organization</option>
           <option value="Proof of recent salary">Proof of recent salary hike,viz letter or email,if any</option>
           <option value="bachelor Certificate/degree certificates">Bachelor Certificate/Degree Certificate</option>
           <option value="provisional Certificate">Bachelor/Degree Provisional Certificate</option>
@@ -76,7 +78,8 @@
           <option value="pan card">PAN CARD</option>
         </select>
         <br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" >
+        <input type="text" value="{{document_type}}">
       <!-- <td></td>
       <td></td>
       <td></td>

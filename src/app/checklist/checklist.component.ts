@@ -24,8 +24,11 @@ export class ChecklistComponent implements OnInit {
   salary_proof:boolean=false;
   qualification:boolean=false;
   any_id:boolean=false;
+  document_type: string="";
 
-
+onselect(value:string){
+  this.document_type=value;
+}
   onWorkProof(){
     this.work_proof=!this.work_proof;
     console.log(this.work_proof);
