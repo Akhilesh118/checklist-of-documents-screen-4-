@@ -104,7 +104,7 @@ onUpload() {
           }
       }
   );*/
-if (this.a!=null && this.document_type!=""){
+if (this.a!=null && ((this.document_type!="") )){
  this.addDocument(this.a);
 }
 else{
